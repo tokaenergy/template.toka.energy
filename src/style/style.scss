@@ -564,3 +564,107 @@ body {
   }
 }
 
+
+
+
+.blog-double {
+  margin-top: 86px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 20px; 
+
+  &__card {
+    grid-column: span 4;
+    width: 100%;
+    height: 561px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+  }
+
+  &__image {
+    width: 100%;
+    height: 240px;
+    border-radius: 14px;
+    object-fit: cover;
+  }
+
+  &__content {
+    width: 100%;
+    height: 123px;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    margin-top: 24px;
+  }
+
+  &__category {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    text-transform: uppercase;
+    line-height: 147%;
+    color: #252834;
+  }
+
+  &__title {
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    color: #252834;
+  }
+
+  &__description {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3;
+    color: #252834;
+  }
+
+  &__author {
+    margin-top: 107px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 173px;
+    height: 43px;
+  }
+
+  &__avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 100px;
+    border: 1px solid #d3dce0;
+  }
+
+  &__author-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__author-name {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 147%;
+  }
+
+  &__author-role {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 147%;
+  }
+
+  &__line {
+    margin-top: auto;
+    width: 100%;
+    height: 1px;
+    background-color: #d3dce0;
+  }
+}
+
