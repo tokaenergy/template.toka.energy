@@ -668,3 +668,81 @@ body {
   }
 }
 
+
+
+.recommended-authors {
+  margin-top: 86px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+
+  &__title {
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 138%;
+    color: #252834;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 20px;
+  }
+
+  &__card {
+    grid-column: span 2;
+    background: linear-gradient(268.52deg, #E9EEF5 0.49%, #E9F8F9 99.07%);
+    border-radius: 13px;
+    padding: 20px 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 127px;
+    gap: 34px;
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 100px;
+    border: 1px solid #d3dce0;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 147%;
+    color: #252834;
+  }
+
+  &__role {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 147%;
+    color: #252834;
+  }
+
+  &__link {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    text-decoration: underline;
+    color: #252834;
+  }
+}
+
