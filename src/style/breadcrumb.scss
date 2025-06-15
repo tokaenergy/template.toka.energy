@@ -1,3 +1,5 @@
+@use 'var' as *;
+
 .breadcrumb {
   display: flex;
   align-items: center;
@@ -5,7 +7,7 @@
   width: max-content;
   height: 40px;
   padding: 12px 21px;
-  border: 1px solid #D3DCE0;
+  border: 1px solid $border;
   border-radius: 37px;
   background-color: #fff;
   margin: 21px 0;

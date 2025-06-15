@@ -1,3 +1,7 @@
+@use 'var' as *;
+
+
+
 .footer {
   width: 100%;
   background: linear-gradient(245.77deg, #0e0e0e 2.24%, #1c1d1d 67.82%, #0e0e0e 100%);
@@ -10,7 +14,7 @@
     margin: 0 auto;
     border-bottom-left-radius: 18px;
     border-bottom-right-radius: 18px;
-    background-color: #1e558e;
+    background-color: $blue;
     overflow: hidden;
     position: relative;
   }
@@ -36,7 +40,7 @@
       font-size: 24px;
       line-height: 147%;
       text-transform: uppercase;
-      color: #fff;
+      color: $white-back;
     }
 
     .footer__banner-icon {
@@ -78,7 +82,7 @@
     margin-top: 48px;
     width: 100%;
     height: 1px;
-    background-color: #222222;
+    background-color: $line-footer;
   }
 }
 
@@ -105,14 +109,14 @@
       font-size: 16px;
       line-height: 100%;
       letter-spacing: 0%;
-      color: #FFFFFF;
+      color: $white-back;
 
       &.office {
         font-weight: 700;
       }
 
       &.address {
-        color: #A7ACC2;
+        color: $not-bright;
         opacity: 0.5;
       }
     }
@@ -126,7 +130,7 @@
     .social-button {
       width: 97px;
       height: 51px;
-      border: 1px solid #222222;
+      border: 1px solid $line-footer;
       border-radius: 74px;
       display: flex;
       justify-content: center;
@@ -149,7 +153,7 @@
 .footer-info__bottom-line {
   width: 100%;
   height: 1px;
-  background-color: #222222;
+  background-color: $line-footer;
   margin-top: 39px;
 }
 
@@ -174,7 +178,7 @@
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
     font-size: 16px;
-    color: #A7ACC2;
+    color: $not-bright;
     opacity: 0.5;
   }
 
@@ -188,7 +192,7 @@
       font-family: 'Manrope', sans-serif;
       font-weight: 400;
       font-size: 14px;
-      color: #FFFFFF;
+      color: $white-back;
       text-decoration: none;
     }
   }
@@ -208,7 +212,7 @@
         font-family: 'Manrope', sans-serif;
         font-weight: 400;
         font-size: 16px;
-        color: #FFFFFF;
+        color: $white-back;
       }
 
       img {
@@ -223,7 +227,7 @@
       width: 398px;
       height: 346px;
       border-radius: 18px;
-      background: #121518;
+      background: $qr-back;
       padding: 29px 0px;
 
       .qr-image {
@@ -247,7 +251,7 @@
           width: 182px;
           height: 45px;
           border-radius: 39px;
-          background: #262B3A;
+          background: $footer-betton-back;
           display: flex;
           align-items: center;
           padding: 0 10px;
@@ -275,7 +279,7 @@
               font-family: 'Poppins', sans-serif;
               font-weight: 600;
               font-size: 12px;
-              color: #FFFFFF;
+              color: $white-back;
               line-height: 179%;
             }
           }
@@ -318,14 +322,14 @@
   font-size: 14px;
   line-height: 100%;
   letter-spacing: 0;
-  color: #ffffff;
+  color: $white-back;
 
   a, span {
     display: block;
     height: 10px;
     line-height: 10px;
     text-decoration: none;
-    color: #ffffff;
+    color: $white-back;
   }
 
   .footer__link--left {

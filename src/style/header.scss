@@ -1,9 +1,11 @@
+@use 'var' as *;
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px 0;
-  border-bottom: 1px solid #D3DCE0;
+  border-bottom: 1px solid $border;
 
   &__logo { cursor: pointer; }
 
@@ -17,7 +19,7 @@
     &-item a {
       font-weight: 500;
       font-size: 16px;
-      color: black;
+      color: $black;
       text-decoration: none;
       transition: color 0.3s;
 
@@ -35,7 +37,7 @@
     width: 53px;
     height: 53px;
     border-radius: 52px;
-    border: 1px solid #D3DCE0;
+    border: 1px solid $border;
     background: transparent;
     display: flex;
     align-items: center;
@@ -51,21 +53,21 @@
 
   &__button {
     padding: 9px 25px;
-    border: 1px solid #000;
+    border: 1px solid $black;
     border-radius: 50px;
     text-decoration: none;
     font-weight: 500;
-    color: black;
+    color: $black;
     transition: all 0.3s ease;
 
     &:hover {
-      background-color: #000;
-      color: #fff;
+      background-color: $black;
+      color: $white-back;
     }
 
     &--primary {
-      background-color: #000;
-      color: #fff;
+      background-color: $black;
+      color: $white-back;
 
       &:hover { background-color: #333; }
     }

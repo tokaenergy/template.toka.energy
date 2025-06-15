@@ -1,10 +1,13 @@
+@use 'var' as *;
+
+
 .blog-title {
   margin: 21px 0;
   width: 828px;
   font-family: 'Unbounded', sans-serif;
   font-weight: 600;
   font-size: 36px;
-  color: #252834;
+  color: $general;
 }
 
 
@@ -68,7 +71,7 @@
     font-family: 'Unbounded', sans-serif;
     font-weight: 500;
     font-size: 24px;
-    color: #252834;
+    color: $general;
     line-height: 1.3;
   }
 
@@ -76,7 +79,7 @@
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
     font-size: 16px;
-    color: #62646A;
+    color: $description;
     line-height: 1.3;
   }
 
@@ -95,7 +98,7 @@
       font-family: 'Manrope', sans-serif;
       font-weight: 400;
       font-size: 16px;
-      color: #000;
+      color: $black;
     }
 
     &-role {
@@ -103,7 +106,7 @@
       font-weight: 400;
       font-size: 12px;
       line-height: 147%;
-      color: #62646A;
+      color: $description;
     }
   }
 
@@ -111,7 +114,7 @@
     width: 42px;
     height: 42px;
     border-radius: 100px;
-    border: 1px solid #D3DCE0;
+    border: 1px solid $border;
   }
 
 }
@@ -179,7 +182,7 @@
     font-family: 'Unbounded', sans-serif;
     font-weight: 500;
     font-size: 18px;
-    color: #252834;
+    color: $general;
     line-height: 1.3;
   }
 
@@ -187,7 +190,7 @@
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
     font-size: 16px;
-    color: #62646A;
+    color: $description;
     line-height: 1.3;
   }
 
@@ -205,7 +208,7 @@
       font-family: 'Manrope', sans-serif;
       font-weight: 400;
       font-size: 14px;
-      color: #000;
+      color: $black;
       line-height: 147%;
     }
 
@@ -214,7 +217,7 @@
       font-weight: 400;
       font-size: 12px;
       line-height: 147%;
-      color: #62646A;
+      color: $description;
     }
   }
 
@@ -222,7 +225,7 @@
     width: 42px;
     height: 42px;
     border-radius: 100px;
-    border: 1px solid #D3DCE0;
+    border: 1px solid $border;
   }
 }
 
@@ -293,7 +296,7 @@
     font-family: 'Unbounded', sans-serif;
     font-weight: 500;
     font-size: 18px;
-    color: #252834;
+    color: $general;
     line-height: 100%;
     margin-top: 20px;
   }
@@ -302,7 +305,7 @@
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
     font-size: 16px;
-    color: #62646A;
+    color: $description;
     line-height: 1.3;
     margin-top: 20px;
   }
@@ -323,7 +326,7 @@
       font-weight: 400;
       font-size: 14px;
       line-height: 147%;
-      color: #000;
+      color: $black;
     }
 
     &-role {
@@ -331,7 +334,7 @@
       font-weight: 400;
       font-size: 12px;
       line-height: 147%;
-      color: #62646A;
+      color: $description;
     }
   }
 
@@ -339,12 +342,12 @@
     width: 42px;
     height: 42px;
     border-radius: 100px;
-    border: 1px solid #D3DCE0;
+    border: 1px solid $border;
   }
 
   &__line {
     margin-top: 20px;
-    border-bottom: 1px solid #D3DCE0;
+    border-bottom: 1px solid $border;
     width: 100%;
   }
 }
@@ -365,7 +368,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #fff;
+    background-color: $white-back;
   }
 
   &__image {
@@ -390,7 +393,7 @@
     font-size: 13px;
     text-transform: uppercase;
     line-height: 147%;
-    color: #252834;
+    color: $general;
   }
 
   &__title {
@@ -398,7 +401,7 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 100%;
-    color: #252834;
+    color: $general;
   }
 
   &__description {
@@ -406,7 +409,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.3;
-    color: #252834;
+    color: $general;
   }
 
   &__author {
@@ -422,7 +425,7 @@
     width: 42px;
     height: 42px;
     border-radius: 100px;
-    border: 1px solid #d3dce0;
+    border: 1px solid $border;
   }
 
   &__author-info {
@@ -449,7 +452,7 @@
     margin-top: auto;
     width: 100%;
     height: 1px;
-    background-color: #d3dce0;
+    background-color: $border;
   }
 }
 
@@ -466,7 +469,7 @@
     font-weight: 500;
     font-size: 24px;
     line-height: 138%;
-    color: #252834;
+    color: $general;
   }
 
   &__list {
@@ -497,7 +500,7 @@
     width: 42px;
     height: 42px;
     border-radius: 100px;
-    border: 1px solid #d3dce0;
+    border: 1px solid $border;
   }
 
   &__info {
@@ -510,7 +513,7 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 147%;
-    color: #252834;
+    color: $general;
   }
 
   &__role {
@@ -518,7 +521,7 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 147%;
-    color: #252834;
+    color: $general;
   }
 
   &__link {
@@ -527,6 +530,6 @@
     font-size: 14px;
     line-height: 100%;
     text-decoration: underline;
-    color: #252834;
+    color: $general;
   }
 }
