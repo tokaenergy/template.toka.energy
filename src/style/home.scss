@@ -1,0 +1,219 @@
+.home-light {
+  background-color: #101316;
+  width: 100%;
+  height: 753px;
+  overflow: hidden;
+
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 20px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 20px;
+  }
+
+  .intro {
+    grid-column: span 5;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+
+    &__top {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    &__title {
+      font-family: 'Unbounded', sans-serif;
+      font-weight: 600;
+      font-size: 110.53px;
+      line-height: 138%;
+      color: #ffffff;
+      margin: 0;
+      width: auto;
+    }
+
+    &__logo-leaf {
+      display: flex;
+      gap: 20px;
+    }
+
+    &__logo {
+      width: 110.53px;
+      height: 110.53px;
+    }
+
+    &__leaf {
+      width: 94px;
+      height: 94px;
+      border-radius: 72px;
+      border: 0.77px solid #12C3447D;
+    }
+
+    &__text {
+      font-family: 'Unbounded', sans-serif;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 138%;
+      color: #ffffff;
+      max-width: 742px;
+    }
+
+    &__phone {
+      position: absolute;
+      top: 70px;
+      right: 0;
+      width: 1202px;
+      height: 738px;
+      z-index: 0;
+    }
+  }
+
+  .stats {
+    grid-column: span 6;
+    display: flex;
+    gap: 63px;
+    margin-top: 20px;
+    z-index: 1;
+
+    .stat {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      &__label {
+        font-family: 'Manrope', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        opacity: 0.6;
+        color: #ffffff;
+        line-height: 100%;
+      }
+
+      &__value {
+        font-family: 'Unbounded', sans-serif;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 147%;
+        text-transform: uppercase;
+        color: #ffffff;
+      }
+    }
+  }
+
+  .slider-dots {
+    grid-column: span 8;
+    display: flex;
+    gap: 4px;
+    margin-top: 20px;
+    z-index: 1;
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 42px;
+      background-color: #ffffff;
+      opacity: 0.4;
+
+      &--active {
+        width: 20px;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+
+
+
+.partners {
+  position: relative;
+  width: 1402px;
+  height: 103px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px; 
+
+  // Левый градиент с Hyundai
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 117.74px;
+    height: 271.8px;
+    background: linear-gradient(
+      180deg,
+      #ffffff 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    transform: rotate(-90deg); // Повернем для вертикали
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    // Лого можно поставить псевдоэлементом или отдельной картинкой:
+    background-image: url('./img/hyundai.png');
+  }
+
+  // Правый градиент с Укргазбанк
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 117.74px;
+    height: 271.8px;
+    background: linear-gradient(
+      180deg,
+      #ffffff 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    transform: rotate(-90deg); // Повернем для вертикали
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url('./img/ukr-gas.png');
+  }
+
+  // Сами логотипы посередине
+  .partner-logo {
+    width: 205.09px;
+    height: 103.15px;
+    border-radius: 11.62px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &.fishka {
+      background-image: url('./img//Fishka.png');
+    }
+    &.okko {
+      background-image: url('./img/okko_logo\ 1.png');
+    }
+    &.nissan {
+      background-image: url('./img/Nissan.png');
+    }
+    &.metro {
+      background-image: url('./img//metro.png');
+    }
+    &.id {
+      background-image: url('./img/audi.png');
+    }
+  }
+}
+
+
+
+
+
+
+
