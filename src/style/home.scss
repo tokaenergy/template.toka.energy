@@ -228,3 +228,150 @@
     }
   }
   
+
+
+
+
+
+
+
+
+  .cards {
+    display: flex;
+    gap: 32px;
+    margin-top: 100px;
+    justify-content: center;
+  }
+  
+  .card {
+    position: relative;
+    width: 632px;
+    height: 559px;
+    border-radius: 18px;
+    background: linear-gradient(268.52deg, #E9EEF5 0.49%, #E9F8F9 99.07%);
+    overflow: hidden;
+  
+    &__title {
+      position: absolute;
+      top: 65px;
+      left: 32px;
+      font-family: 'Unbounded', sans-serif;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 138%;
+      color: #252834;
+      width: 305px;
+      height: 150px;
+    }
+
+
+    
+  
+    &__image-wrapper {
+      position: absolute;
+      top: 142px;
+      left: 49px;
+  
+      img {
+        width: 626px;
+        height: 417px;
+        object-fit: cover;
+      }
+    }
+  
+    &__content {
+      position: absolute;
+      bottom: 13px;
+      left: 13px;
+      width: 606px;
+      height: 219px;
+      border-radius: 18px;
+      background: #fff;
+      padding: 36px 34px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    &__text {
+      font-family: 'Manrope', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: #252834;
+      text-align: center;
+      width: 100%;
+    }
+  
+    &__button {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 24px;
+  
+      .card__circle-btn {
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        border: 1px solid #d3dce0;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+  
+      .card__btn-text {
+        font-family: 'Manrope', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        color: #252834;
+      }
+    }
+  }
+  
+
+
+  .card.second-card {
+    .card__image-wrapper {
+      top: 94px;
+      left: 140px;
+  
+      img {
+        width: 490px;
+        height: 465px;
+      }
+    }
+  }
+
+
+
+
+  .card__badge {
+    position: absolute;
+    top: 235px;
+    left: 32px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px 10px 10px;
+    border-radius: 45px;
+    border: 1px solid;
+    border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.32), rgba(255, 255, 255, 0));
+    background: rgba(255, 255, 255, 0.31);
+    backdrop-filter: blur(4px);
+  
+    span {
+      font-family: 'Manrope', sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 100%;
+      color: #252834e0;
+    }
+  
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  
